@@ -12,23 +12,27 @@ public class Main {
         Searching searcher = new Searching();
         int[] nums = generateArray(length);
         printArray(nums);
-        int[] nums1 = generateArray(length);
-        printArray(nums1);
-        int[] nums2 = generateArray(length);
-        printArray(nums1);
-        sorter.bubble(nums);
-        sorter.directSort(nums1);
-        sorter.insertSort(nums2);
-        System.out.println();
+        System.out.println("_".repeat(10));
+        sorter.heapSort(nums);
         printArray(nums);
-        System.out.println();
-        printArray(nums1);
-        System.out.println();
-        printArray(nums1);
-        System.out.println();
-        System.out.println(searcher.binarySearch(nums, 7));
-        System.out.println(searcher.binarySearch(nums, 0));
-        System.out.println(searcher.binarySearch(nums, 1));
+
+//        int[] nums1 = generateArray(length);
+//        printArray(nums1);
+//        int[] nums2 = generateArray(length);
+//        printArray(nums1);
+//        sorter.bubble(nums);
+//        sorter.directSort(nums1);
+//        sorter.insertSort(nums2);
+//        System.out.println();
+//        printArray(nums);
+//        System.out.println();
+//        printArray(nums1);
+//        System.out.println();
+//        printArray(nums1);
+//        System.out.println();
+//        System.out.println(searcher.binarySearch(nums, 7));
+//        System.out.println(searcher.binarySearch(nums, 0));
+//        System.out.println(searcher.binarySearch(nums, 1));
     }
 
     public static int[] generateArray(int length){
